@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "KafkaFunctionApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7081",
+      "launchBrowser": false
+    }
+  }
+}
