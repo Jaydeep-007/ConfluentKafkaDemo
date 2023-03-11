@@ -14,10 +14,10 @@ namespace KafkaFunctionApp
         // "KafkaPassword":"{EVENT_HUBS_CONNECTION_STRING}
         [FunctionName("Function1")]
         public void Run(
-            [KafkaTrigger("pkc-7prvp.centralindia.azure.confluent.cloud:9092",
+            [KafkaTrigger("<bootstrap server url>",
                           "topic_1",
-                          Username = "4RMQDOR5YTCZXODV",
-                          Password = "7nSvqYEi9hmPWZlrQiomktpNjZX3M9yXU+ZEc0eXPx07Aw3ZgYMdeoGTgKDeQrOf",
+                          Username = "<API Key>",
+                          Password = "<API Password>",
                           Protocol = BrokerProtocol.SaslSsl,
                           AuthenticationMode = BrokerAuthenticationMode.Plain,
                           ConsumerGroup = "$Default")] KafkaEventData<string>[] events,
